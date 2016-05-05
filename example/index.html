@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>bezier test</title>
+	<style>
+		.hidden {
+			display: none;
+		}
+		.display-points {
+			width: 500px;
+			border: 1px solid black;
+		}
+	</style>
 </head>
 
 <body>
@@ -10,6 +20,11 @@
 	<button id="add" type="button">add curve</button>
 	<button id="points" type="button">get points</button>
 	<button id="save" type="button">save</button>
+	<input id="open" type="file">
+	<div class="display-points hidden">
+		<pre  id="points-text"></pre>
+	</div>
 	<script type="text/javascript" src="../dist/example/index.js"></script>
 </body>
+
 </html>
